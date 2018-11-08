@@ -1,0 +1,161 @@
+For hybridSort I ran randmoizedQuickSort on the list until the sublist sizes were 10.
+Once the sublist got to size 10, the list is almost nearly sorted so I ran insertion 
+sort on the whole list.This sorting method ran almost twice as fast as randomizedQuickSort by itself
+as shown below with the run times on the same sized list. 
+Also side note on efficiency testing: some radix sorting did not work on randomized lists and sorted list the results were negative
+for any number of iterations (the only reasoning I can think of would be that there might be a difference in the time in creating
+a lit of comparable and int lists). 
+
+-----------------------------------------------
+hybridSort()
+
+List:100
+Iterations: 500000
+Overhead for randomized list: 0.001762
+Overall duration of sort: 0.00831
+Duration(overhead-overall duration): 0.006548
+
+List:1000
+Iterations: 30000
+Overhead for randomized list: 0.01723
+Overall duration of sort: 0.0463
+Duration(overhead-overall duration): 0.02906
+
+List:10000
+Iterations: 1000
+Overhead for randomized list: 0.187
+Overall duration of sort: 1.499
+Duration(overhead-overall duration): 1.312
+
+List:100000
+Iterations: 1000
+Overhead for randomized list: 1.88
+Overall duration of sort: 18.408
+Duration(overhead-overall duration): 16.52
+
+-----------------------------------------------
+List:100
+Iterations: 500000
+Overhead for sorted list: 1.94e-4
+Overall duration of sort: 0.00332
+Duration(overhead-overall duration): 0.003126
+
+List:1000
+Iterations: 400000
+Overhead for sorted list:  0.005265
+Overall duration of sort:  0.03916
+Duration(overhead-overall duration):  0.03389
+
+List:10000
+Iterations: 71000
+Overhead for sorted list: 0.04608
+Overall duration of sort: 0.4453
+Duration(overhead-overall duration): 0.3992
+
+List:100000
+Iterations: 6500
+Overhead for sorted list: 0.50707
+Overall duration of sort: 5.591
+Duration(overhead-overall duration): 5.0846
+-------------------------------------------------
+List:100
+Iterations: 300000
+Overhead for reversed list: 1.53 e-4
+Overall duration of sort: 0.00429
+Duration(overhead-overall duration): 0.004143
+
+List:1000
+Iterations: 280000
+Overhead for reversed list: 0.00655
+Overall duration of sort: 0.04858
+Duration(overhead-overall duration): 0.0420
+
+List:10000
+Iterations: 20000
+Overhead for reversed list: 0.0655
+Overall duration of sort: 0.5466
+Duration(overhead-overall duration): 0.4811
+
+List:100000
+Iterations: 11000
+Overhead for reversed list: 0.519818
+Overall duration of sort: 5.674
+Duration(overhead-overall duration): 5.154
+-----------------------------------------------
+
+randomizedQuickSort()
+
+List:100
+Iterations: 500000
+Overhead for randomized list: 0.00157
+Overall duration of sort: 0.01154
+Duration(overhead-overall duration): 0.00997
+
+List:1000
+Iterations: 30000
+Overhead for randomized list: 0.01563
+Overall duration of sort: 0.09323
+Duration(overhead-overall duration): 0.0776
+
+List:10000
+Iterations: 1000
+Overhead for randomized list: 0.173
+Overall duration of sort: 1.767
+Duration(overhead-overall duration): 1.5939
+
+List:100000
+Iterations: 1000
+Overhead for randomized list: 1.552
+Overall duration of sort: 21.812
+Duration(overhead-overall duration): 20.26
+
+-----------------------------------------------
+List:100
+Iterations: 500000
+Overhead for sorted list: 1.64 e-4
+Overall duration of sort: 0.00783
+Duration(overhead-overall duration): 0.00766
+
+List:1000
+Iterations: 400000
+Overhead for sorted list:  0.00408
+Overall duration of sort: 0.083692
+Duration(overhead-overall duration):  0.07961
+
+List:10000
+Iterations: 71000
+Overhead for sorted list: 0.0477
+Overall duration of sort: 0.9189
+Duration(overhead-overall duration): 0.8711
+
+List:100000
+Iterations: 6500
+Overhead for sorted list: 0.50507
+Overall duration of sort: 10.153
+Duration(overhead-overall duration): 9.648
+-------------------------------------------------
+List:100
+Iterations: 300000
+Overhead for reversed list: 1.3e-4
+Overall duration of sort: 0.00831
+Duration(overhead-overall duration): 0.008183
+
+List:1000
+Iterations:280000
+Overhead for reversed list: 0.00516
+Overall duration of sort: 0.0894
+Duration(overhead-overall duration): 0.08423 
+
+List:10000
+Iterations: 20000
+Overhead for reversed list: 0.0527
+Overall duration of sort: 0.98915
+Duration(overhead-overall duration): 0.9364
+
+List:100000
+Iterations: 11000
+Overhead for reversed list: 0.47990
+Overall duration of sort: 10.180
+Duration(overhead-overall duration): 9.7001
+-----------------------------------------------
+
